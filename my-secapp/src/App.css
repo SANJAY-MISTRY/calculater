@@ -1,0 +1,126 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+header {
+  padding: 10px 0;
+  background: linear-gradient(to right top, #b4ff00, #11bde4) center center fixed;;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  color: white;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  border:2px solid #fff;
+  padding: 6px 15px;
+  margin: 0 5px;
+  border-radius: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left top, blue, red) center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  height: 50px;
+  text-shadow: 3.25px 2.25px 10.25px #fff;
+  width: 100%;
+}
+
+.jumbotron p {
+  text-align: center;
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .jumbotron {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    margin-top: 110px;
+  }
+  .jumbotron p {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+.card {
+  background: #fff;
+  border: 5px solid #fff;
+  border-radius: 2px;
+  margin: 40px 20px;
+  position: relative;
+  height: 300px;
+  width: 250px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  transition: box-shadow 0.1s ease-in-out;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px #999, 0 12px 24px #999;
+  height: 300px;
+  width: 250;
+}
+
+.card>.img-container {
+  height: 70%;
+  padding-top: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card>.img-container>img {
+  width: 80%
+}
+
+.card>.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+  background: #6CADDC;
+}
+
+.card>.img-content>ul {
+  list-style-type: none;
+}
+
+.animate {
+  animation: shake 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .card:hover {
+    height: 300px;
+    width: 250px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  }
+}
